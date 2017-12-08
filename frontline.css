@@ -270,12 +270,14 @@ textarea.form-rule {
     float: left;
     width: 100%;
     height: auto;
-    margin: 0 2px 20px;
+    margin: 0 0 20px;
 }
 .dev-box {
-    margin: 5px 4px 4px 5px;
+    margin: 2px;
     padding: 7px 10px;
-    border: 1px solid #ccc;
+	border: 1px solid #333;
+	color:#333;
+	white-space: nowrap;
 }
 .dev-col {
     width: 100%;
@@ -304,12 +306,16 @@ textarea.form-rule {
 .dev-col-9 {
     width: 75%;
 }
+
+@media (max-width: 576px) {
+	.dev-col-sm{
+        width: 100%;
+    }
+}	
 @media (max-width: 768px) {
-	.dev-col-1,
-    .dev-col-3,
-    .dev-col-4,
-    .dev-col-6,
-	.dev-col-9 {
+	.dev-col-md {
         width: 100%;
     }
 }
+
+	
